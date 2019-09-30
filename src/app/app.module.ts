@@ -14,7 +14,7 @@ import { FooterModule } from './footer/footer.module';
   declarations: [
     AppComponent,
     HomeComponent,
-    PageNotFoundComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

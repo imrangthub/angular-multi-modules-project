@@ -41,6 +41,10 @@ const routes: Routes = [
     component: StudentsComponent
   },
   {
+    path: 'contact-us',
+    loadChildren: './feature/contact-us/contact-us.module#ContactUsModule'
+  },
+  {
     path: '**',
     component: PageNotFoundComponent
   }
