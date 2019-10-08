@@ -1,0 +1,10 @@
+table tr {
+border: skyblue;
+background-color: cadetblue;
+}
+
+table {
+    width: 600px;
+    background-color: skyblue;
+border: solid;
+}

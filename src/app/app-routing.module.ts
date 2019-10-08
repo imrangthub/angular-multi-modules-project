@@ -6,6 +6,8 @@ import { CourseComponent } from './feature/courses/course/course.component';
 import { StudentsComponent } from './feature/students/students/students.component';
 import { CourseListComponent } from './feature/courses/course-list/course-list.component';
 import { TakingCourseComponent } from './feature/courses/taking-course/taking-course.component';
+import { EmployeeHomeComponent } from './feature/employee/employee-home/employee-home.component';
+import { EmployeeDetailComponent } from './feature/employee/employee-home/employee-detail/employee-detail.component';
 
 const routes: Routes = [
   {
@@ -43,6 +45,14 @@ const routes: Routes = [
   {
     path: 'contact-us',
     loadChildren: './feature/contact-us/contact-us.module#ContactUsModule'
+  },
+  {
+    path: 'employee',
+    component: EmployeeHomeComponent
+  },
+  {
+    path: 'employee-detail',
+    component: EmployeeDetailComponent
   },
   {
     path: '**',

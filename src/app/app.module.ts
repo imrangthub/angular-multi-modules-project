@@ -9,12 +9,16 @@ import { StudentsModule } from './feature/students/students.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HeaderModule } from './header/header.module';
 import { FooterModule } from './footer/footer.module';
+import { EmployeeHomeComponent } from './feature/employee/employee-home/employee-home.component';
+import { EmployeeDetailComponent } from './feature/employee/employee-home/employee-detail/employee-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    EmployeeHomeComponent,
+    EmployeeDetailComponent
   ],
   imports: [
     BrowserModule,
