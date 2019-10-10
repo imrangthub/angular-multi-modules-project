@@ -1,20 +1,32 @@
 <div style="text-align: center;background-color:silver; padding: 20px">
   <h1>Employee List</h1>
+</div>
 
-  <div>
+<div>
+    <app-employee-count 
+                      [all]= "getTotalEmployeeCount()"
+                      [male]= "getTotalMaleEmployeeCount()"
+                      [female]= "getTotalFemaleEmpCount()"
+                      [myTesInput]= "1001">
+    </app-employee-count>
+
     <table>
-      <tr>
-        <td>Code</td>Name<td>Gender</td>Age<td>salary</td><td><td>Action</td>
+      <tr> 
+        <td>Code</td>
+        <td>Name</td>
+        <td>Gender</td>
+        <td>Age</td>
+        <td>salary</td>
+        <td>Action</td>
       </tr>
-      <tr>
-        <td>002</td>
-        <td>MD IMRAN HOSSAIN</td>
-        <td>MAILE</td>
-        <td>28</td>
-        <td>30</td>
-        <td></td>
+
+      <tr *ngFor="let empObj of employees;">
+        <td>{{empObj.code}}</td>
+        <td>{{empObj.name}}</td>
+        <td>{{empObj.gender}}</td>
+        <td>{{empObj.age}}</td>
+        <td>{{empObj.salary}}</td>
         <td>View</td>
       </tr>
     </table>
   </div>
-</div>

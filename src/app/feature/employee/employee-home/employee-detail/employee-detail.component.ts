@@ -9,6 +9,7 @@ export class EmployeeDetailComponent implements OnInit {
 
   constructor() { }
 
+  
   ngOnInit() {
   }
 

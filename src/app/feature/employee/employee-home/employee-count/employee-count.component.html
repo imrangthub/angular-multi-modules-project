@@ -1,0 +1,22 @@
+<div>
+<span>Show: </span>
+
+    <input type="radio" name="employeeCountValue"
+    value = "all"  
+    [(ngModel)]="employeeCountValue"
+    (ngModelChange)="onChangeRadioBtn()">
+    <span> All ( {{all}} )</span>
+
+    <input type="radio" name="employeeCountValue"
+    value = "male"  
+    [(ngModel)]="employeeCountValue"
+    (ngModelChange)="onChangeRadioBtn()">
+    <span> Male ( {{male}} )</span>
+
+    <input type="radio" name="employeeCountValue"
+    value = "female"  
+    [(ngModel)]="employeeCountValue"
+    (ngModelChange)="onChangeRadioBtn()">
+    <span> Female ( {{female}} )</span>
+
+</div>

@@ -11,6 +11,8 @@ import { HeaderModule } from './header/header.module';
 import { FooterModule } from './footer/footer.module';
 import { EmployeeHomeComponent } from './feature/employee/employee-home/employee-home.component';
 import { EmployeeDetailComponent } from './feature/employee/employee-home/employee-detail/employee-detail.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EmployeeCountComponent } from './feature/employee/employee-home/employee-count/employee-count.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +20,11 @@ import { EmployeeDetailComponent } from './feature/employee/employee-home/employ
     HomeComponent,
     PageNotFoundComponent,
     EmployeeHomeComponent,
-    EmployeeDetailComponent
+    EmployeeDetailComponent,
+    EmployeeCountComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     CoursesModule,
