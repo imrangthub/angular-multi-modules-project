@@ -3,30 +3,48 @@
 </div>
 
 <div>
-    <app-employee-count 
+    <app-employee-count *ngIf="employees" 
+
                       [all]= "getTotalEmployeeCount()"
                       [male]= "getTotalMaleEmployeeCount()"
                       [female]= "getTotalFemaleEmpCount()"
-                      [myTesInput]= "1001">
+                      [myTesInput]= "1001"
+                      (countRadioBtnSelectionChanged)="onEmpFilterRadioBtnChange($event)"
+                      >
     </app-employee-count>
 
     <table>
       <tr> 
-        <td>Code</td>
+        <td>Serial</td>
+        <td># ID</td>
         <td>Name</td>
         <td>Gender</td>
         <td>Age</td>
-        <td>salary</td>
+        <td>Phone</td>
         <td>Action</td>
       </tr>
 
-      <tr *ngFor="let empObj of employees;">
-        <td>{{empObj.code}}</td>
-        <td>{{empObj.name}}</td>
-        <td>{{empObj.gender}}</td>
-        <td>{{empObj.age}}</td>
-        <td>{{empObj.salary}}</td>
-        <td>View</td>
+      <ng-container *ngFor="let empObj of employees; let i = index">
+          <tr *ngIf="empFelterValue=='all' || empFelterValue == empObj.gender">
+               <td>{{i+1}}</td>
+              <td>{{empObj.consultationId}}</td>
+              <td>{{empObj.patientName}}</td>
+              <td>{{empObj.gender}}</td>
+              <td>{{empObj.age}}</td>
+              <td>{{empObj.phoneNo}}</td>
+              <td>View</td>
+            </tr>
+      </ng-container>
+      <tr *ngIf="!employees">
+        <td colspan="7">
+         Loading Employee, Please wait...
+        </td>
       </tr>
+      <tr *ngIf="employees && employees.length==0">
+          <td colspan="7">
+           No Employee data found
+          </td>
+        </tr>
+      
     </table>
   </div>

@@ -13,6 +13,11 @@ import { EmployeeHomeComponent } from './feature/employee/employee-home/employee
 import { EmployeeDetailComponent } from './feature/employee/employee-home/employee-detail/employee-detail.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EmployeeCountComponent } from './feature/employee/employee-home/employee-count/employee-count.component';
+import { EmployeeService } from './feature/employee/_coreEmployee/service/employee.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+
+
 
 @NgModule({
   declarations: [
@@ -24,6 +29,7 @@ import { EmployeeCountComponent } from './feature/employee/employee-home/employe
     EmployeeCountComponent
   ],
   imports: [
+    HttpClientModule,
     FormsModule,
     BrowserModule,
     AppRoutingModule,
@@ -32,7 +38,9 @@ import { EmployeeCountComponent } from './feature/employee/employee-home/employe
     HeaderModule,
     FooterModule
   ],
-  providers: [],
+  providers: [
+    EmployeeService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
