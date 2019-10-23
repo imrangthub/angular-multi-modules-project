@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DesignService } from 'src/app/core/design.service';
 
 @Component({
   selector: 'app-footer-main',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterMainComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private designService : DesignService
+  ) { }
+
+  appFooterColor:string = 'blue';
 
   ngOnInit() {
+
+    this.setFooterColor();
+  }
+
+  setFooterColor(): void {
+    console.log("footerColor: ",this.designService.footerColor);
   }
 
 }

@@ -15,6 +15,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EmployeeCountComponent } from './feature/employee/employee-home/employee-count/employee-count.component';
 import { EmployeeService } from './feature/employee/_coreEmployee/service/employee.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { LearnRxjsComponent } from './feature/learn-rxjs/learn-rxjs.component';
+import { LearnObservableComponent } from './feature/learn-rxjs/learn-observable/learn-observable.component';
+import { SubjectComponent } from './feature/learn-rxjs/subject/subject.component';
+import { BehaviorSubjectComponent } from './feature/learn-rxjs/behavior-subject/behavior-subject.component';
 
 
 
@@ -26,7 +30,11 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     PageNotFoundComponent,
     EmployeeHomeComponent,
     EmployeeDetailComponent,
-    EmployeeCountComponent
+    EmployeeCountComponent,
+    LearnRxjsComponent,
+    LearnObservableComponent,
+    SubjectComponent,
+    BehaviorSubjectComponent,
   ],
   imports: [
     HttpClientModule,

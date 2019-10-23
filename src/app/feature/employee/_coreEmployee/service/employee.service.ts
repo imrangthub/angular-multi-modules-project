@@ -11,7 +11,7 @@ import { map } from 'rxjs/operators';
 @Injectable()
 export class EmployeeService {
 
-    
+
 
     constructor(
         private http: HttpClient
@@ -22,8 +22,6 @@ export class EmployeeService {
               map((data:any)=> data
          ));
       }
-
-
 
 
 

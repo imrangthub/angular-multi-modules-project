@@ -8,6 +8,10 @@ import { CourseListComponent } from './feature/courses/course-list/course-list.c
 import { TakingCourseComponent } from './feature/courses/taking-course/taking-course.component';
 import { EmployeeHomeComponent } from './feature/employee/employee-home/employee-home.component';
 import { EmployeeDetailComponent } from './feature/employee/employee-home/employee-detail/employee-detail.component';
+import { LearnRxjsComponent } from './feature/learn-rxjs/learn-rxjs.component';
+import { LearnObservableComponent } from './feature/learn-rxjs/learn-observable/learn-observable.component';
+import { SubjectComponent } from './feature/learn-rxjs/subject/subject.component';
+import { BehaviorSubjectComponent } from './feature/learn-rxjs/behavior-subject/behavior-subject.component';
 
 const routes: Routes = [
   {
@@ -53,6 +57,29 @@ const routes: Routes = [
   {
     path: 'employee-detail',
     component: EmployeeDetailComponent
+  },
+  {
+    path: 'learn-rxjs',
+    component: LearnRxjsComponent,
+    children: [
+      {
+        path: 'observable',
+        component: LearnObservableComponent
+      },
+      {
+        path: 'subjedct',
+        component: SubjectComponent
+      },
+      {
+        path: 'behavior-subjedct',
+        component: BehaviorSubjectComponent
+      },
+      {
+        path: '**',
+        redirectTo: 'observable',
+        pathMatch: 'full'
+      }
+    ]
   },
   {
     path: '**',
