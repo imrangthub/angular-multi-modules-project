@@ -3,6 +3,7 @@ import { Subject, Observable } from 'rxjs';
 import { interval } from 'rxjs';
 import { switchMap, map } from 'rxjs/operators';
 import { SubjectService } from '../coreRxjs/subject.service';
+import { DesignService } from 'src/app/core/design.service';
 
 @Component({
   selector: 'app-subject',
@@ -13,7 +14,8 @@ export class SubjectComponent implements OnInit {
 
 
   constructor(
-    private subjectService : SubjectService
+    private subjectService : SubjectService,
+    private designService : DesignService
   ) { }
 
   simpleOutPut: string;
@@ -55,6 +57,9 @@ export class SubjectComponent implements OnInit {
 
 
   setColor(): void {
+    if(this.colorName){
+      this.designService.footerColor = this.colorName;
+    }
     console.log("Color name: ",this.colorName);
   }
 

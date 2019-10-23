@@ -12,15 +12,11 @@ export class FooterMainComponent implements OnInit {
     private designService : DesignService
   ) { }
 
-  appFooterColor:string = 'blue';
+  appFooterColor:string;
 
   ngOnInit() {
 
-    this.setFooterColor();
   }
 
-  setFooterColor(): void {
-    console.log("footerColor: ",this.designService.footerColor);
-  }
 
 }

@@ -9,7 +9,7 @@ import { Observable, of, Subject } from 'rxjs';
 })
 export class DesignService {
 
-  footerColor: string = 'red';
+  footerColor: string = 'skyblue';
   
   
 
