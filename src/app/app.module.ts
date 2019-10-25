@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -29,7 +28,8 @@ import { ZeroConfigComponent } from './feature/data-table-example/zero-config/ze
 import { ServerSideComponent } from './feature/data-table-example/server-side/server-side.component';
 
 
-
+// High charts
+import { ChartModule } from 'angular-highcharts';
 
 @NgModule({
   declarations: [
@@ -52,6 +52,7 @@ import { ServerSideComponent } from './feature/data-table-example/server-side/se
   imports: [
     DataTablesModule,
     HttpClientModule,
+    ChartModule,
     FormsModule,
     BrowserModule,
     AppRoutingModule,
