@@ -4,3 +4,34 @@
     background: lightseagreen;
     color: white;
 }
+
+
+.dataGridTable {
+	width: 98%;
+	margin: auto;
+	padding-bottom: 23px;
+}
+.dataGridTable .dataTable.no-footer {
+	border-bottom: 0px;
+	border: solid 1px #a8d7ea;
+}
+/* .dataGridTable table td {
+	border-top: solid 1px #efefef !important;
+	border-left: solid 1px #efefef;
+} */
+.dataGridTable table tr:nth-child(2n+2) {
+	background: #e9f5f7 !important;
+}
+
+
+.dataGridTable table tr:nth-child(2n+2) {
+	background: #e9f5f7 !important;
+}
+
+.dataGridTable tr.dtrg-group.dtrg-level-0 {
+	font-weight: bold;
+	background-color: #8fbf9a !important;
+	text-align: left;
+	color: black;
+	padding-left: 10px;
+}
