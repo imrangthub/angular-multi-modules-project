@@ -19,6 +19,9 @@ import { LearnRxjsComponent } from './feature/learn-rxjs/learn-rxjs.component';
 import { LearnObservableComponent } from './feature/learn-rxjs/learn-observable/learn-observable.component';
 import { SubjectComponent } from './feature/learn-rxjs/subject/subject.component';
 import { BehaviorSubjectComponent } from './feature/learn-rxjs/behavior-subject/behavior-subject.component';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DataTablesModule } from 'angular-datatables';
 
 
 
@@ -37,6 +40,7 @@ import { BehaviorSubjectComponent } from './feature/learn-rxjs/behavior-subject/
     BehaviorSubjectComponent,
   ],
   imports: [
+    DataTablesModule,
     HttpClientModule,
     FormsModule,
     BrowserModule,
@@ -44,7 +48,9 @@ import { BehaviorSubjectComponent } from './feature/learn-rxjs/behavior-subject/
     CoursesModule,
     StudentsModule,
     HeaderModule,
-    FooterModule
+    FooterModule,
+    BsDatepickerModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [
     EmployeeService
