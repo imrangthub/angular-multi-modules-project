@@ -3,3 +3,10 @@
     height: 340px;
     
 }
+
+
+.page-header {
+    padding: 12px;
+    background: lightseagreen;
+    color: white;
+}

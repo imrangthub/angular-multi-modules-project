@@ -1,0 +1,45 @@
+
+
+<div class="center-design">
+    <div class="row page-header">
+      <h6>BS DATE PICKER</h6><br>
+    </div>
+  </div>
+  
+<div class="row" style="margin-top: 20px;">
+
+  <div class="col-auto col-md-2">
+    <div class="input-group mb-2">
+      <div class="input-group-prepend">
+        <div class="input-group-text lebelBg">From</div>
+      </div>
+      <input type="text" 
+             class="form-control datePicker" 
+             #fromDatedp="bsDatepicker"
+             bsDatepicker
+             [(ngModel)]="fromDate"
+             (onHidden)="onChangeFromDate()"
+             [bsConfig]="{ dateInputFormat: 'DD/MM/YYYY' }"
+             [maxDate]="maxDate" 
+             placeholder="From Date">
+    </div>
+  </div>
+  <div class="col-auto col-md-2">
+    <div class="input-group mb-2">
+      <div class="input-group-prepend">
+        <div class="input-group-text lebelBg">To</div>
+      </div>
+      <input type="text" 
+             class="form-control datePicker" 
+             #toDatedp="bsDatepicker"
+             bsDatepicker
+             [(ngModel)]="toDate"
+             (onHidden)="onChangeToDate()"
+             [bsConfig]="{ dateInputFormat: 'DD/MM/YYYY' }"
+             [minDate]="minDate" 
+             placeholder="To Date">
+    </div>
+  </div>
+
+
+</div>

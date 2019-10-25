@@ -22,6 +22,11 @@ import { BehaviorSubjectComponent } from './feature/learn-rxjs/behavior-subject/
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DataTablesModule } from 'angular-datatables';
+import { DatePickerExampleComponent } from './feature/date-picker-example/date-picker-example.component';
+import { DataTableExampleComponent } from './feature/data-table-example/data-table-example.component';
+import { DashboardExampleComponent } from './feature/dashboard-example/dashboard-example.component';
+import { ZeroConfigComponent } from './feature/data-table-example/zero-config/zero-config.component';
+import { ServerSideComponent } from './feature/data-table-example/server-side/server-side.component';
 
 
 
@@ -38,6 +43,11 @@ import { DataTablesModule } from 'angular-datatables';
     LearnObservableComponent,
     SubjectComponent,
     BehaviorSubjectComponent,
+    DatePickerExampleComponent,
+    DataTableExampleComponent,
+    DashboardExampleComponent,
+    ZeroConfigComponent,
+    ServerSideComponent,
   ],
   imports: [
     DataTablesModule,

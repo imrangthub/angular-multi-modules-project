@@ -1,45 +1,38 @@
 <div style="text-align: center;background-color: #1db3ee; padding: 20px">
-  <h1>Student Management System</h1>
 
+  <a routerLink="home" class="btn btn-primary" role="button">HOME</a> | 
+  <a routerLink="course" class="btn btn-secondary" role="button">COURSE</a> | 
+  <a routerLink="student"class="btn btn-success" role="button">STUDENT</a> | 
+  <a routerLink="contact-us"class="btn btn-danger" role="button">CONTACT US</a> | 
+  <a routerLink="employee"class="btn btn-warning" role="button">EMPLOYEE</a> | 
+  <a routerLink="datepicker-example"class="btn btn-info" role="button">DATE PICKER</a> | 
+  <a routerLink="dashboard-example"class="btn btn-info" role="button">DASHBOARD</a> |
 
-
-  <a class="nav-link" routerLink="home"><span>HOME</span></a> | 
-  <a class="nav-link" routerLink="course"><span>COURSE</span></a> | 
-  <a class="nav-link" routerLink="student"><span>STUDENT</span></a> |
-  <a class="nav-link" routerLink="contact-us"><span>CONTACT-US</span></a> |
-  <a class="nav-link" routerLink="employee"><span>EMPLOYEE</span></a> |
-  <a class="nav-link" routerLink="learn-rxjs"><span>RXJS</span></a> 
-
-
-  <a href="#" class="btn btn-info" role="button">Link Button</a>
-<button type="button" class="btn btn-info">Button</button>
-<input type="button" class="btn btn-info" value="Input Button">
-<input type="submit" class="btn btn-info" value="Submit Button">
-
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
-
+  <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          DATA TABLE
+      </button> | 
+      <div class="dropdown-menu">
+        <a class="dropdown-item" routerLink="data-table-example/zero-config">Zero Config</a>
+        <a class="dropdown-item" routerLink="data-table-example/server-side">Server Side Process</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Other</a>
+      </div>
+    </div>
 
 <!-- Example single danger button -->
 <div class="btn-group">
   <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Action
+    RXJS
   </button>
   <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
+    <a class="dropdown-item" routerLink="learn-rxjs/observable">Observable</a>
+    <a class="dropdown-item" routerLink="learn-rxjs/subjedct">Subjedct</a>
+    <a class="dropdown-item" routerLink="learn-rxjs/behavior-subjedct">behavior-subjedct</a>
     <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#">Separated link</a>
+    <a class="dropdown-item" href="#">Promise</a>
   </div>
 </div>
-
 </div>
 
 

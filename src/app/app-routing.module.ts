@@ -12,6 +12,11 @@ import { LearnRxjsComponent } from './feature/learn-rxjs/learn-rxjs.component';
 import { LearnObservableComponent } from './feature/learn-rxjs/learn-observable/learn-observable.component';
 import { SubjectComponent } from './feature/learn-rxjs/subject/subject.component';
 import { BehaviorSubjectComponent } from './feature/learn-rxjs/behavior-subject/behavior-subject.component';
+import { DashboardExampleComponent } from './feature/dashboard-example/dashboard-example.component';
+import { DatePickerExampleComponent } from './feature/date-picker-example/date-picker-example.component';
+import { DataTableExampleComponent } from './feature/data-table-example/data-table-example.component';
+import { ZeroConfigComponent } from './feature/data-table-example/zero-config/zero-config.component';
+import { ServerSideComponent } from './feature/data-table-example/server-side/server-side.component';
 
 const routes: Routes = [
   {
@@ -77,6 +82,33 @@ const routes: Routes = [
       {
         path: '**',
         redirectTo: 'observable',
+        pathMatch: 'full'
+      }
+    ]
+  },
+  {
+    path: 'dashboard-example',
+    component: DashboardExampleComponent
+  },
+  {
+    path: 'datepicker-example',
+    component: DatePickerExampleComponent
+  },
+  {
+    path: 'data-table-example',
+    component: DataTableExampleComponent,
+    children: [
+      {
+        path: 'zero-config',
+        component: ZeroConfigComponent
+      },
+      {
+        path: 'server-side',
+        component: ServerSideComponent
+      },
+      {
+        path: '**',
+        redirectTo: 'zero-config',
         pathMatch: 'full'
       }
     ]
