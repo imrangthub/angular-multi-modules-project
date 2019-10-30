@@ -17,6 +17,8 @@ import { DatePickerExampleComponent } from './feature/date-picker-example/date-p
 import { DataTableExampleComponent } from './feature/data-table-example/data-table-example.component';
 import { ZeroConfigComponent } from './feature/data-table-example/zero-config/zero-config.component';
 import { ServerSideComponent } from './feature/data-table-example/server-side/server-side.component';
+import { LoginOneComponent } from './login/login-one/login-one.component';
+import { LoginTwoComponent } from './login/login-two/login-two.component';
 
 const routes: Routes = [
   {
@@ -109,6 +111,24 @@ const routes: Routes = [
       {
         path: '**',
         redirectTo: 'zero-config',
+        pathMatch: 'full'
+      }
+    ]
+  },
+  {
+    path: 'login',
+    children: [
+      {
+        path: 'login-one',
+        component: LoginOneComponent
+      },
+      {
+        path: 'login-two',
+        component: LoginTwoComponent
+      },
+      {
+        path: '**',
+        redirectTo: 'login-one',
         pathMatch: 'full'
       }
     ]

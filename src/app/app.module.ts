@@ -30,6 +30,8 @@ import { ServerSideComponent } from './feature/data-table-example/server-side/se
 
 // High charts
 import { ChartModule } from 'angular-highcharts';
+import { LoginOneComponent } from './login/login-one/login-one.component';
+import { LoginTwoComponent } from './login/login-two/login-two.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +50,8 @@ import { ChartModule } from 'angular-highcharts';
     DashboardExampleComponent,
     ZeroConfigComponent,
     ServerSideComponent,
+    LoginOneComponent,
+    LoginTwoComponent,
   ],
   imports: [
     DataTablesModule,
