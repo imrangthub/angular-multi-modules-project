@@ -32,6 +32,7 @@ import { ServerSideComponent } from './feature/data-table-example/server-side/se
 import { ChartModule } from 'angular-highcharts';
 import { LoginOneComponent } from './login/login-one/login-one.component';
 import { LoginTwoComponent } from './login/login-two/login-two.component';
+import { JavaScriptHttpComponent } from './feature/learn-java-script/java-script-http/java-script-http.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { LoginTwoComponent } from './login/login-two/login-two.component';
     ServerSideComponent,
     LoginOneComponent,
     LoginTwoComponent,
+    JavaScriptHttpComponent,
   ],
   imports: [
     DataTablesModule,

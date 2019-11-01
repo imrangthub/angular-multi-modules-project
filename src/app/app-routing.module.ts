@@ -19,6 +19,7 @@ import { ZeroConfigComponent } from './feature/data-table-example/zero-config/ze
 import { ServerSideComponent } from './feature/data-table-example/server-side/server-side.component';
 import { LoginOneComponent } from './login/login-one/login-one.component';
 import { LoginTwoComponent } from './login/login-two/login-two.component';
+import { JavaScriptHttpComponent } from './feature/learn-java-script/java-script-http/java-script-http.component';
 
 const routes: Routes = [
   {
@@ -129,6 +130,20 @@ const routes: Routes = [
       {
         path: '**',
         redirectTo: 'login-one',
+        pathMatch: 'full'
+      }
+    ]
+  },
+  {
+    path: 'java-script',
+    children: [
+      {
+        path: 'http',
+        component: JavaScriptHttpComponent
+      },
+      {
+        path: '**',
+        redirectTo: 'http',
         pathMatch: 'full'
       }
     ]

@@ -5,7 +5,9 @@
     color: white;
 }
 
-
+.default-height {
+	height: 400px;
+}
 .dataGridTable {
 	width: 98%;
 	margin: auto;
